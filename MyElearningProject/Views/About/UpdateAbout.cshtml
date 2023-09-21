@@ -1,0 +1,45 @@
+﻿@model MyElearningProject.DAL.Entities.About
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Hakkımda Güncelleme Sayfası</h2>
+
+<form method="post">
+
+    @Html.HiddenFor(x => x.AboutID, new { @class = "form-control" })
+    <br />
+    <label> Başlık</label>
+    @Html.TextBoxFor(x => x.Description)
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Title1, new { @class = "form-control" })
+    <br />
+    <label>Konu 1</label>
+    @Html.TextBoxFor(x => x.Title2, new { @class = "form-control" })
+    <br />
+    <label>Konu 2</label>
+    @Html.TextBoxFor(x => x.Title3, new { @class = "form-control" })
+    <br />
+    <label>Konu 3</label>
+    @Html.TextBoxFor(x => x.Title4, new { @class = "form-control" })
+    <br />
+    <label>Konu 4</label>
+    @Html.TextBoxFor(x => x.Title5, new { @class = "form-control" })
+    <br />
+    <label>Konu 5</label>
+    @Html.TextBoxFor(x => x.Title6, new { @class = "form-control" })
+    <br />
+    <label>Konu 6</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    
+
+
+    <br />
+    <br />
+
+    <button class="btn btn-primary">Kaydet</button>
+</form>
+

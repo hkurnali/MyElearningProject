@@ -29,5 +29,9 @@ namespace MyElearningProject.Controllers
         {
             return PartialView();
         }
+        public PartialViewResult PartialPageRowTitle()
+        {
+            return PartialView();
+        }
     }
 }
